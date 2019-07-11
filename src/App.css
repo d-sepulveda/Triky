@@ -1,33 +1,75 @@
-.App {
+.App{
+  margin: 0;
+  height:100%;
+  overflow: auto;
+}
+
+.head{
+  margin: 0;
+  width: 100%;
+  border: solid 2px red;
+  background-color: rgb(224, 174, 174);
+  text-align: center;
+}
+.body{
+  overflow: auto;
+  margin: 0;
+  margin-top: 1%;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.contain-square{
+  margin: 2% auto;
+  width: 300px;
+  height: 300px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+.square{
+  margin: 0 auto;
+  width: 98px;
+  height: 98px;
+  border: solid 1px black;
+  
+}
+.square p{
+  font-size: 2em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.footer{
+  width: 100%;
+  background-color: lightblue;
+  border: solid 1px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contain-text{
+  margin: 2% auto;
+  width: 300px;
+  background-color: white;
+  border: solid 1px black;
 }
 
-.App-link {
-  color: #61dafb;
+.contain-text p{
+  text-align: center;
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contain-button{
+  width: 10%;
+  margin: 1% auto;
+}
+
+.button{
+  width: 100%;
+  margin: 0% auto;
+  background-color: blueviolet;
+  border: solid 1px black;
+  color: beige;
 }
